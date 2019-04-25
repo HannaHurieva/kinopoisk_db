@@ -1,0 +1,10 @@
+insert into personsawards SELECT 1, 'Лучшая женская роль', '2009-01-01', 11, id as film, 6 FROM film WHERE name = '"Отряд самоубийц"';
+insert into personsawards SELECT 2, 'Лучшая женская роль', '2009-01-01', 3, id as film, 6 FROM film WHERE name = '"Отряд самоубийц"';
+insert into personsawards SELECT 3, 'Лучшая мужская роль', '2009-01-01', 7, id as film, 7 FROM film WHERE name = '"Отряд самоубийц"';
+insert into personsawards SELECT 4, 'Лучшая мужская роль', '2009-01-01', 2, id as film, 7 FROM film WHERE name = '"Отряд самоубийц"';
+insert into personsawards SELECT 5, 'Лучшая мужская роль', '2009-01-01', 5, id as film, 8 FROM film WHERE name = '"Отряд самоубийц"';
+insert into personsawards SELECT 6, 'Лучшая мужская роль', '2009-01-01', 8, id as film, 8 FROM film WHERE name = '"Отряд самоубийц"';
+insert into personsawards SELECT 7, 'Лучшая женская роль', '2009-01-01', 4, id as film, 4 FROM film WHERE name = '"Чудо-женщина"';
+insert into personsawards SELECT 8, 'Лучшая женская роль', '2009-01-01', 12, id as film, 4 FROM film WHERE name = '"Чудо-женщина"';
+insert into personsawards SELECT 9, 'Лучшая мужская роль', '2009-01-01', 8, id as film, 5 FROM film WHERE name = '"Чудо-женщина"';
+insert into personsawards SELECT 10, 'Лучшая мужская роль', '2009-01-01', 7, id as film, 5 FROM film WHERE name = '"Чудо-женщина"';

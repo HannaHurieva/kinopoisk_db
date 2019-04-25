@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Database connection settings -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/kinopoisk</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+        <property name="connection.username">root</property>
+        <property name="connection.password">password</property>
+
+        <!-- JDBC connection pool, use Hibernate internal connection pool -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- Defines the SQL dialect used in Hiberante's application -->
+        <property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Update the database schema on startup -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- Display and format all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+
+        <!-- NOTE that after automapping with IDEA property username and password will delete -->
+        <mapping class="com.alevel.entities.UserInfo"/>
+        <mapping class="com.alevel.entities.Review"/>
+        <mapping class="com.alevel.entities.Rating"/>
+        <mapping class="com.alevel.entities.PersonsAwards"/>
+        <mapping class="com.alevel.entities.PersonCareer"/>
+        <mapping class="com.alevel.entities.Person"/>
+        <mapping class="com.alevel.entities.Genre"/>
+        <mapping class="com.alevel.entities.FilmGenre"/>
+        <mapping class="com.alevel.entities.Film"/>
+        <mapping class="com.alevel.entities.Casts"/>
+        <mapping class="com.alevel.entities.Career"/>
+        <mapping class="com.alevel.entities.Award"/>
+
+    </session-factory>
+</hibernate-configuration>
